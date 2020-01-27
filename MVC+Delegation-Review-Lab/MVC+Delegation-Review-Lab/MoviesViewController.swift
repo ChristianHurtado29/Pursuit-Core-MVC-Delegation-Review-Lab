@@ -30,7 +30,6 @@ class MoviesViewController: UIViewController, fontSizeDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.dataSource = self
         loadData()
         
     }
@@ -51,6 +50,7 @@ class MoviesViewController: UIViewController, fontSizeDelegate {
         movies = Movie.allMovies
     }
 }
+
 extension MoviesViewController: UITableViewDelegate {
     
 }
